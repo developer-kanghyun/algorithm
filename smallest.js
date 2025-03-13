@@ -28,6 +28,26 @@ const solution1 = (hp) => {
 const solution2 = (hp) =>
   Math.floor(hp / 5) + Math.floor((hp % 5) / 3) + ((hp % 5) % 3);
 
+function solution3(hp) {
+  let answer = 0;
+  while (hp > 0) {
+    if (hp >= 5) {
+      hp = hp - 5;
+      answer++;
+    }
+    if ((hp < 5) & (hp >= 3)) {
+      hp = hp - 3;
+      answer++;
+    }
+    if ((hp < 3) & (hp > 0)) {
+      hp = hp - 1;
+      answer++;
+    }
+  }
+  return answer;
+}
+
 console.log(solution(23));
 console.log(solution1(23));
 console.log(solution2(23));
+console.log(solution3(23));
