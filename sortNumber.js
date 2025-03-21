@@ -19,5 +19,5 @@ const solution = (my_string) => {
 //       ?.map(Number) // 숫자로 변환
 //       .sort((a, b) => a - b) || []
 //   ); // 빈 배열 처리
-};
+// };
 console.log(solution("hi12392"));
