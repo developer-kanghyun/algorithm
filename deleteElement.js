@@ -3,6 +3,7 @@
 
 // 1. arr의 원소에서 delete_list의 원소를 포함한다면, arr배열에 추가하지 않는다.
 // 2. arr 배열을 return
+
 const solution = (arr, delete_list) => {
   return arr.filter((x) => !delete_list.includes(x));
 };
